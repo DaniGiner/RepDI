@@ -4,26 +4,36 @@
 
     <title>Ejercicio 2</title>
     <style>
+      *{
+        font-size: 18;
+      }
       /* h1 color blue */
       h1{
         color: blue;
+        font-size: 36;
       }
       /* Segundo h1 color orange*/
       article h1{
         color: orange;
       }
       /* Destacado red*/
-      .destacado{
+      b.destacado{
         color: red;
         font-style: italic;
       }
       /*japo pink*/
       #japo{
         color: pink;
+        font-size: 24;
+        font-weight: bold;
       }
       /* i green*/
+
       i{
         color: green;
+        font-family: "courier new";
+        font-style: normal;
+        font-weight: bold;
       }
       /* span destacado blue y negrita*/
       span.destacado{
@@ -47,10 +57,16 @@
       footer > span{
         font-style: italic;
         color: red;
+        font-family: garamond;
       }
       /*parrafos salteados yellow*/
       p:nth-child(even) {
         background: yellow;
+      }
+      /*links cursor por encima grey y bold*/
+      a:hover{
+        color: grey;
+        font-weight: bold;
       }
     </style>
   </head>
