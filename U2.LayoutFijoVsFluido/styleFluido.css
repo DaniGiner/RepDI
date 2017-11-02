@@ -1,0 +1,138 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+header{
+  background-color: lightblue;
+  display: table;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+header h1{
+  font: bold 36px Helvetica;
+  display: table-cell;
+  vertical-align: middle;
+}
+header nav ul{
+  display: table-cell;
+  padding-bottom: 6.25%;
+}
+article h1{
+  font: bold 24px "Verdana";
+
+}
+article{
+  margin: 2%;
+  padding: 1%;
+  width: 72.9%;
+}
+article h2, nav{
+  font: bold 14px "Verdana";
+}
+main{
+  width: 100%;
+  height: 67.7%;
+  display: block;
+  padding-top: 10.9%;
+  min-height: 100%;
+  margin-bottom: 13%;
+}
+header nav{
+  width: 100%;
+  float: right;
+  text-align left ;
+  vertical-align: top;
+}
+nav ul{
+  display: block;
+}
+header nav li{
+  background-color: steelblue;
+  display: inline-block;
+  padding: 10%;
+}
+aside{
+  width: 41.6%;
+}
+li a{
+  color: white;
+  text-decoration: none;
+}
+.logo{
+  display: table-cell;
+
+}
+.logo > img{
+  width: 13%;
+  height: 11.9%;
+  padding: 1.6%;
+  padding-left: 2.6%
+}
+figure > img{
+  height: 21%;
+  width: 21%;
+}
+footer{
+  text-align: center;
+  height: 5.2%;
+}
+.articUno, .articDos{
+  background-color: linen;
+  border: 1px solid lightgrey;
+}
+.cajaPie{
+  height: 5.2%;
+}
+.secundario{
+  background-color: lightgrey;
+  margin-left: 78%;
+  margin-top: -68%;
+  padding: 1%;
+  padding-right: 15.6%;
+  overflow: hidden;
+}
+.secundario li{
+  display: inline-block;
+}
+.secundario li a{
+  color: black;
+  text-decoration: none;
+}
+time{
+  color: grey;
+}
+
+aside nav ul{
+  list-style: none;
+  background-color:  lightgrey;
+  width: 18.75%;
+  padding: 0%;
+  margin: 0%;
+}
+
+li:hover ul{
+  display:block
+}
+aside nav li ul{
+  display: none;
+  padding-left: 4%;
+  list-style: none;
+  width: 14.48%;
+}
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
+.coments{
+  text-align: right;
+
+}
