@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Título de la web</title>
+		<!--Estilo Fluido (comentar línea 46 del css) y Fluido Tope (descomentar línea 46 del css):-->
+		<!-- <link rel="stylesheet" href="styleFluido.css"> -->
+		<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7f0000">
+		<meta name="theme-color" content="#ffffff">
+		<!--Estilo Fijo:-->
+		<style media="screen">
+    *	{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+     }
+
+    /* Para que los nuevos elementos sean tratamos como block */
+    section, footer, aside, nav, article, figure, figcaption,hgroup {
+      display: block;
+    }
+
+    #cabecera{
+      display: table;
+      width: 100%;
+      /*Código para poner la cabecera fija*/
+      position:fixed;
+      z-index: 100;
+      display: inline-block;
+    }
+
+    /*div.logo, h1 y #menu se comportan como celdas de la tabla*/
+    .logo{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .logo img{
+      width: 75px;
+    }
+    header > h1{
+      display: table-cell;
+      text-align: left;
+      vertical-align: middle;
+      padding-left: 20px;
+    }
+		h1{
+			font-family: 'Itim';
+		}
+
+    /*Centramos el elemento contenedor y alineamos normalmente dentro del contenedor*/
+    body {
+      /*Código para hacer sticky footer con flex */
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      margin: 25px;
+    }
+
+    #container {
+      margin: 20px;
+    }
+
+    #cabecera {
+      padding-top: 20px;
+      background-color: white;
+      top: 0px;
+
+    }
+
+    /* dos columnas para los bloques de section y aside */
+    #conocenos {
+      float: left;
+      width: 45vh;
+			text-align: center;
+		}
+    #contactanos {
+      float: right;
+      width: 55vh;
+    }
+    .contactanos{
+      text-align: center;
+    }
+
+    /* últimos retoques */
+    img{
+      width: 200px;
+      margin: 5px;
+    }
+
+
+    /*Formateo menús*/
+    /*Común a todos los menús*/
+    li a{
+      text-decoration: none;
+      color: black;
+    }
+
+    /*Menú lateral: */
+    aside ul li{
+      list-style-type: square;
+      list-style-position: inside;
+    }
+
+    aside ul{
+      padding-left: 10px;
+      display: none;
+    }
+
+    aside div:hover ul {
+        display:block;
+    }
+
+    aside ul li:hover{
+      color:blue;
+    }
+    .banner img{
+      width: 100%;
+      display: block;
+      height: 250px;
+      margin-top: 120px;
+    }
+		</style>
+	</head>
+	<body>
+			<header id="cabecera">
+				<div class="logo">
+			    <img src="imagen.png" alt="logo"></img>
+
+			  </div>
+				<h1>Titulo de la página</h1>
+			</header>
+      <div class="banner">
+        <img src="imagen.png" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+			<div id="container">
+			<div id="conocenos">
+					<h1>Conocenos</h1>
+					<img src="imagen.png" alt="">
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+      <div class="contactanos">
+          <h1>Contacta con nosotros</h1>
+          <p>Escribe a <a href="#">mail@dominio.es</a></p>
+          <p>Llama al <a href="#">555-123-123</a></p>
+      </div>
+		</div><!--Cierra el div de container-->
+
+	</body>
+</html>
