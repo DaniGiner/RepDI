@@ -5,19 +5,15 @@
 		<title>Título de la web</title>
 		<!--Estilo Fluido (comentar línea 46 del css) y Fluido Tope (descomentar línea 46 del css):-->
 		<!-- <link rel="stylesheet" href="styleFluido.css"> -->
-		<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
-<<<<<<< HEAD
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
-=======
->>>>>>> f5f23b537230e44c6727b7df145104f18411c9e2
+
+		<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+
 		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 		<link rel="manifest" href="manifest.json">
-<<<<<<< HEAD
-=======
-		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#7f0000">
->>>>>>> f5f23b537230e44c6727b7df145104f18411c9e2
 		<meta name="theme-color" content="#ffffff">
 		<!--Estilo Fijo:-->
 		<style media="screen">
@@ -34,7 +30,6 @@
 
     #cabecera{
       display: table;
-      width: 100%;
       /*Código para poner la cabecera fija*/
       position:fixed;
       z-index: 100;
@@ -76,87 +71,61 @@
       padding-top: 20px;
       background-color: white;
       top: 0px;
-
     }
 
-    /* dos columnas para los bloques de section y aside */
-    #conocenos {
-      float: left;
-      width: 45vh;
-			text-align: center;
-		}
-    #contactanos {
-      float: right;
-      width: 55vh;
-    }
     .contactanos{
       text-align: center;
     }
 
-    /* últimos retoques */
     img{
       width: 200px;
       margin: 5px;
     }
 
-
-    /*Formateo menús*/
-    /*Común a todos los menús*/
-    li a{
-      text-decoration: none;
-      color: black;
-    }
-
-    /*Menú lateral: */
-    aside ul li{
-      list-style-type: square;
-      list-style-position: inside;
-    }
-
-    aside ul{
-      padding-left: 10px;
-      display: none;
-    }
-
-    aside div:hover ul {
-        display:block;
-    }
-
-    aside ul li:hover{
-      color:blue;
-    }
     .banner img{
       width: 100%;
       display: block;
       height: 250px;
       margin-top: 120px;
     }
+		#conocenos{
+			padding: 10px;
+			text-align: center;
+		}
+		#contactanos{
+			padding: 10px;
+			text-align: center;
+		}
 		</style>
 	</head>
 	<body>
-			<header id="cabecera">
+			<header class="row col-12" id="cabecera">
 				<div class="logo">
 			    <img src="anoniman.png" alt="logo"></img>
 
 			  </div>
 				<h1>Titulo de la página</h1>
 			</header>
-      <div class="banner">
-        <img src="imagen.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-			<div id="container">
-			<div id="conocenos">
-					<h1>Conocenos</h1>
-					<img src="imagen.png" alt="">
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<div class="" id="container">
+	      <div class="banner row">
+	        <img src="imagen.png" alt="">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	      </div>
+				<div class="row" id="info">
+					<div class="col-5" id="conocenos">
+							<h1>Conocenos</h1>
+							<img src="imagen.png" alt="">
+						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+		      <div class="col-7" id="contactanos">
+		          <h1>Contacta con nosotros</h1>
+		          <p>Escribe a <a href="#">mail@dominio.es</a></p>
+		          <p>Llama al <a href="#">555-123-123</a></p>
+		      </div>
+				</div>
 			</div>
-      <div class="contactanos">
-          <h1>Contacta con nosotros</h1>
-          <p>Escribe a <a href="#">mail@dominio.es</a></p>
-          <p>Llama al <a href="#">555-123-123</a></p>
-      </div>
-		</div><!--Cierra el div de container-->
-
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	</body>
 </html>
