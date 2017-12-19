@@ -9,6 +9,7 @@
 
 
 		<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -81,12 +82,13 @@
       width: 200px;
       margin: 5px;
     }
-
+		.banner{
+			text-align: center;
+		}
     .banner img{
-      width: 100%;
       display: block;
-      height: 250px;
-      margin-top: 120px;
+      margin-top: 50px;
+			height: 500px;
     }
 		#conocenos{
 			padding: 10px;
@@ -96,31 +98,42 @@
 			padding: 10px;
 			text-align: center;
 		}
+		#contactanos div i{
+			vertical-align: middle;
+		}
+		#contactanos div{
+			font-size: 32px;
+		}
+		@media (min-width: 1200px) {
+
+		  }
 		</style>
 	</head>
 	<body>
 			<header class="row col-12" id="cabecera">
 				<div class="logo">
-			    <img src="anoniman.png" alt="logo"></img>
+			    <img src="anoniman.svg" alt="logo"></img>
 
 			  </div>
-				<h1>Titulo de la página</h1>
+				<h1>Anoniman, el superheroe anónimo.</h1>
 			</header>
 			<div class="" id="container">
 	      <div class="banner row">
-	        <img src="imagen.png" alt="">
-	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	        <img class="w-100 d-none d-sm-none d-md-block" src="grande.png" alt="banner">
+					<img class="w-100 d-none d-sm-block d-md-none" src="mediano.png" alt="banner">
+					<img class="w-100 d-block d-sm-none" src="pequeño.png" alt="banner">
+	        <p>Cuando la ciudad de Nueva York habia perdido la esperanza, cuando todo parecia perdido para sus habitantes, solo les quedaba rezar por un superheroe como Batman o Spiderman, y recibieron a Anoniman, que aunque no tenga poderes, y sea un tipo normal y corriente, siempre acudira a su llamada en el cielo.</p>
 	      </div>
 				<div class="row" id="info">
 					<div class="col-5" id="conocenos">
 							<h1>Conocenos</h1>
-							<img src="imagen.png" alt="">
-						  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							<img src="altar.jpg" alt="">
+						  <p>En la imagen de arriba se muestra el santuario a deadpool que Anoniman tiene en su cuarto, de el emerge la energia que Anoniman necesita para librar sus batallas contra el mal y salvar las calles de Nueva York.</p>
 					</div>
 		      <div class="col-7" id="contactanos">
 		          <h1>Contacta con nosotros</h1>
-		          <p>Escribe a <a href="#">mail@dominio.es</a></p>
-		          <p>Llama al <a href="#">555-123-123</a></p>
+		          <div><i class="fa fa-envelope-o fa-3x"></i> Escribe a <a href="mailto:anoniman@gmail.es">anoniman@avengers.com</a></div>
+		          <div><i class="fa fa-phone-square fa-3x"></i> Llama al <a href="tel:+1-303-499-7111">555-123-123</a></div>
 		      </div>
 				</div>
 			</div>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Título de la web</title>
+		<!--Estilo Fluido (comentar línea 46 del css) y Fluido Tope (descomentar línea 46 del css):-->
+		<!-- <link rel="stylesheet" href="styleFluido.css"> -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+		<link href="https://fonts.googleapis.com/css?family=Itim" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="manifest.json">
+		<meta name="theme-color" content="#ffffff">
+		<!--Estilo Fijo:-->
+		<style media="screen">
+    *	{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+     }
+
+    /* Para que los nuevos elementos sean tratamos como block */
+    section, footer, aside, nav, article, figure, figcaption,hgroup {
+      display: block;
+    }
+
+    #cabecera{
+      display: table;
+      /*Código para poner la cabecera fija*/
+      position:fixed;
+      z-index: 100;
+      display: inline-block;
+			max-height: 20%;
+    }
+
+    /*div.logo, h1 y #menu se comportan como celdas de la tabla*/
+    .logo{
+      display: table-cell;
+      vertical-align: middle;
+    }
+    .logo img{
+      width: 8.3vh;
+			max-width: 20vh;
+    }
+    header > h1{
+      display: table-cell;
+      text-align: left;
+      vertical-align: middle;
+      padding-left: 2.2%;
+    }
+		h1{
+			font-family: 'Itim';
+		}
+
+    /*Centramos el elemento contenedor y alineamos normalmente dentro del contenedor*/
+    body {
+      /*Código para hacer sticky footer con flex */
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+      margin: 3%;
+    }
+
+    #container {
+      margin: 2.2%;
+    }
+
+    #cabecera {
+      padding-top: 2.2%;
+      background-color: white;
+      top: 0px;
+    }
+
+    .contactanos{
+      text-align: center;
+    }
+    #conocenos img{
+      width: 40%;
+      margin: 4%;
+    }
+		.banner{
+			text-align: center;
+		}
+    .banner img{
+      display: block;
+      margin-top: 4%;
+			height: 55.5vh;
+    }
+		#conocenos{
+			padding: 1%;
+			text-align: center;
+		}
+		#contactanos{
+			padding: 1%;
+			text-align: center;
+		}
+		#contactanos div i{
+			vertical-align: middle;
+		}
+		#contactanos div{
+			font-size: 32px;
+		}
+		</style>
+	</head>
+	<body>
+			<header class="row col-12" id="cabecera">
+				<div class="logo">
+			    <img src="anoniman.svg" alt="logo"></img>
+
+			  </div>
+				<h1>Anoniman, el superheroe anónimo.</h1>
+			</header>
+			<div class="" id="container">
+	      <div class="banner row">
+	        <img class="w-100 d-none d-sm-none d-md-block" src="grande.png" alt="banner">
+					<img class="w-100 d-none d-sm-block d-md-none" src="mediano.png" alt="banner">
+					<img class="w-100 d-block d-sm-none" src="pequeño.png" alt="banner">
+	        <p>Cuando la ciudad de Nueva York habia perdido la esperanza, cuando todo parecia perdido para sus habitantes, solo les quedaba rezar por un superheroe como Batman o Spiderman, y recibieron a Anoniman, que aunque no tenga poderes, y sea un tipo normal y corriente, siempre acudira a su llamada en el cielo.</p>
+	      </div>
+				<div class="row" id="info">
+					<div class="col-5" id="conocenos">
+							<h1>Conocenos</h1>
+							<img src="altar.jpg" alt="">
+						  <p>En la imagen de arriba se muestra el santuario a deadpool que Anoniman tiene en su cuarto, de el emerge la energia que Anoniman necesita para librar sus batallas contra el mal y salvar las calles de Nueva York.</p>
+					</div>
+		      <div class="col-7" id="contactanos">
+		          <h1>Contacta con nosotros</h1>
+		          <div><i class="fa fa-envelope-o fa-3x"></i> Escribe a <a href="mailto:anoniman@gmail.es">anoniman@avengers.com</a></div>
+		          <div><i class="fa fa-phone-square fa-3x"></i> Llama al <a href="tel:+1-303-499-7111">555-123-123</a></div>
+		      </div>
+				</div>
+			</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	</body>
+</html>
