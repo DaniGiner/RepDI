@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ej1</title>
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+		<style type="text/css">
+		.rojo{
+		 color: #cc0000;
+		}
+		.verde{
+		 color: #00cc00;
+		}
+		.azul{
+		 color: #0000cc;
+		}
+		.fondogris{
+		 background-color: #cccccc;
+		}
+		.italica{
+		 font-style: italic;
+		}
+		.negrita{
+		 font-weight: bold;
+		}
+		body{
+		 font-family: verdana, arial, helvetica;
+		}
+		div{
+		 margin-bottom: 4px;
+		}
+		i{
+		 font-style: normal;
+		 display: block;
+		 margin-top: 8px;
+		}
+		b{
+		 font-weight: normal;
+		 display: block;
+		 margin-top: 8px;
+		}
+		</style>
+		<script>
+		$(document).ready(function(){
+			/*Aqui va el codigo*/
+			$("p:first").addClass("rojo");
+			$("p:odd:first").addClass("verde");
+			$("p span").addClass("italica");
+			$("p:nth-of-type(3)").addClass("fondogris rojo");
+			$("div:nth-of-type(2)").addClass("rojo");
+			$("div span").addClass("negrita");
+			$("div:nth-of-type(3)").addClass("verde fondogris");
+			$("div:last").addClass("azul");
+			$("b").addClass("b");
+			$("i").addClass("i");
+
+		});
+		</script>
+	</head>
+	<body>
+		<h1>Selectores en jQuery</h1>
+		<p>Este es un párrafo con class="rojo"</p>
+		<p>Este es un párrafo con class="verde" y aquí <span>meto una
+		itálica</span></p>
+		<p>Este es un párrafo con class="rojo fondogris" (es decir, este elemento tiene
+		aplicadas las clases "rojo" y "fondogris"</p>
+		<p id="p4">Este es un párrafo con id="p4", sin class</p>
+		<p>Este es un párrafo sin id ni class</p>
+		<div>Esto es una división </div>
+		<div>Esto es una división con class="rojo" y aqui <span>meto una
+		negrita</span></div>
+		<div>Esto es una división con class="verde fondogris"</div>
+		<div>Esto es una división sin id ni class</div>
+		<div>Esto es una división con class="azul"</div>
+		<b>Esto es una etiqueta b</b>
+		<i>Esto es una etiqueta i</i>
+	</body>
+</html>

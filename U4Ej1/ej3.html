@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Ejercicio 3</title>
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+		<script>
+			/*Aquí va el código*/
+			$(document).ready(function() {
+
+				$("img").width(200).css("display", "block").css("margin", "auto");
+				$(enc).toggle();
+				//Sin toggle:
+
+				var mostrada = false;
+				$(enc).hide();
+				$("button").click(function(){
+					if (mostrada==true) {
+						$("button").html("Enciende");
+						$(enc).hide();
+						$(apa).show();
+						mostrada = false;
+					}
+					else if (mostrada==false) {
+						$("button").html("Apaga");
+						$(enc).show();
+						$(apa).hide();
+						mostrada=true;
+					}
+				});
+				//con toggle
+				// $(interruptor).click(function(){
+		    //     $(apa).toggle();
+				// 		$(enc).toggle();
+		    // });
+			});
+		</script>
+	</head>
+	<body>
+	 <div class="contenedor">
+	 <img id="apa" src="off.png">
+	 <img id="enc" src="on.png">
+	 <button id="interruptor">Enciende</button>
+	 </div>
+	</body>
+</html>
